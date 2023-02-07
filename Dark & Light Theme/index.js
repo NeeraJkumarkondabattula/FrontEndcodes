@@ -1,0 +1,17 @@
+document.querySelector(".switch").onclick=function(){
+    if(document.querySelector("#check").checked){
+        document.querySelector(".container").style.justifyContent="end";
+        document.querySelector("body").style.backgroundColor="black";
+        document.querySelector(".container").style.borderColor="white";
+        document.querySelector("body").style.color="white";
+        document.querySelector(".switch").style.borderColor="white";
+        document.querySelector("span").innerHTML="Dark";
+    }else{
+        document.querySelector(".container").style.justifyContent="start";
+        document.querySelector("body").style.backgroundColor="white";
+        document.querySelector(".container").style.borderColor="black";
+        document.querySelector(".switch").style.borderColor="black";
+        document.querySelector("body").style.color="black";
+        document.querySelector("span").innerHTML="Light";
+    };
+};
