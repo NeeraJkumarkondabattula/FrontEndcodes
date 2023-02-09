@@ -1,6 +1,7 @@
-var op1;
-function click(ev
-  ){
-  op1=document.getElementsByTagName("button").innerText;
-}
-console.log(op1);
+
+document.querySelector("#color").addEventListener("click",function(){
+    document.querySelector(".sub").style.backgroundColor = "red";
+});
+document.querySelector("#shape").addEventListener("click",function(){
+    document.querySelector(".subb").style.borderRadius = "0px 100px 0px 0px";
+});
